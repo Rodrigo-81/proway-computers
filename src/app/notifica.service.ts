@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { MattSnackBar } from '@angular/material/typings';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +7,7 @@ import { MattSnackBar } from '@angular/material/typings';
 export class NotificaService {
 
   constructor(
-    private snackBar: MattSnackBar
+    private snackBar : MatSnackBar
   ) { }
 
   notificar(mensagem: string){

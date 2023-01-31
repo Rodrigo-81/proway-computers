@@ -10,6 +10,7 @@ import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.componen
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { provideEnvironmentNgxMask } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     MatSnackBarModule,
     MatSlideToggleModule
   ],
-  providers: [],
+  providers: [provideEnvironmentNgxMask()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
